@@ -33,8 +33,8 @@
       return {
         //这是登录表单的数据绑定对象
         loginfrom: {
-          username: '',
-          password: ''
+          username: 'admin',
+          password: '123456'
         },
         loginFromRules: {
           username: [
@@ -58,10 +58,12 @@
       //校验
       login() {
         this.$refs.loginFromRel.validate(async valid => {
-          if (!valud) return;
-          const {data: result} = await this.$http.post('login', this.loginfrom)
-          if (result.meta.status != 200) return console.log("登录失败");
-          console.log("登录成功");
+          if (!valid) return;
+          const {data: res} = await this.$http.post('login', this.loginfrom);
+          if (res.meta.status !== 200) return this.$message.error('登录失败，请重新确认用户名和密码！');
+          this.$message.success('登录成功');
+          window.sessionStorage.setItem('token', res.data.token);
+          this.$router.push('/home')
         })
       }
     }
