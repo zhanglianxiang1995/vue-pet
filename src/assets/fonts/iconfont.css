@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1597999618743'); /* IE9 */
+  src: url('iconfont.eot?t=1597999618743#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAP8AAsAAAAACJgAAAOwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqFAIRXATYCJAMMCwgABCAFhG0HNxueB8gekiRNAwccACiAAIIigNbS2ds9CKFLFLINO2YVFWHiollKaOuqq+rZiP8/nfpP8nMU5itRgEhOQSE0nIyCJysFlAtIm53yyLQZpsIEOLVzEiBA5mRsVXSdRtTDG72oaGREXSezzgjN/T+KlvwfyocUbRi7iTzIywTU67UUWmsz9AIjAbMCwp3dagQmYZAqyoNKUBRsTLHoMOSqbA/1Hnjzvj78h2NAJo8AFu7ctlqg4Vfy11Ram9FcUAQIh7NB2UbEGJAIV4WOE3SQGEOrtxS66vxCEmRDhWdm8AS2qljoP15GKAAoGnnskDw7KCFmE/iVyueVjt9FIaR+gLAgYDsfIYrzuHRxWviGvSdTPMH+k2dTp0MoGOz3+3svBBadOJ3k67TjJTmh0IAviChTINCn+ReWHV+/9yTyFMX3ndCORzSsadPxdT2aNkSlquGEd990KvIEAT4iYq8/B3zz91KFstjSY+hgcBI99+PLgU44k3wicl/qqZoP9C40+2qwT7v/8qHn0b4H1XI0c1bf37+fXeieQ37ldCxGnChwFNQKArk/k9v5jiRuYxf27YfD0hd3Vg9nByfZvJtZhiXItH2bkTsebdtOGZdkGR6xeb0n4azylshFYT5muK8O8hGOMm3bxfhifQyHBBFxi3I73g/3Ix1UvmK5aPQPg6lzPxooTnUOoQEkOlBvbO2q3FW1sZWL+FXdZEG5rsK6oJddxldxfw2T0DCNunnegPSIywyoO/GCK/bCl152n7Nu4nA9/n4yWtdwJy6r7kjthGNfLxt7Lvf9F2/j2UYv3ABT43fqH7WHeJfWfpLvsb5XuGIituZ/FakD+EmmKc9Xe0jQzEV1C52BX6JfygMgqWqCPJmKiWKh6ooeb28sQz0MUwM87T51F918AXVVuiLIlHogqvQhE3YMcg3moFBZhHqj2rc36KCghRQOjNjBQdDqJmSavUPU6gMyYT9CrtsfKLRGQ72jkHhgg4HsEc0KMarEgk3rsN0siTwyqxF+OUesUy6jEhd7hH6iuO1hXJhXkE63E5EoQyxxr7YWqSqPeUUScBt3HXG5JCwrkoOY1TybqspV+fl80TPlmSUBIqxSEEYqwgIzWQezM5OIeNpdFZH5fA5hNcXFSKmoa3H2IxRu9sGxQnkKGiDbFWKjuksZ7raaVRGVihen8RQSAdbG2wgXTEgwuXicA2GmymPrEJNVyRca8U0VedOrhPvbA/XAiTFQiEY6KO4l0Wqb0gl2wQgA') format('woff2'),
+  url('iconfont.woff?t=1597999618743') format('woff'),
+  url('iconfont.ttf?t=1597999618743') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1597999618743#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghu:before {
+  content: "\e615";
+}
+
+.icon-mima:before {
+  content: "\e617";
+}
+
