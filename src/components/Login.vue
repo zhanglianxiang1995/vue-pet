@@ -6,20 +6,20 @@
       <div class="avatar_box">
         <img src="../assets/petlog.jpg" alt="">
       </div>
-      <el-form :model="loginfrom" :rules="loginFromRules" label-width="0px" class="login_from">
+      <el-form :model="loginfrom" ref="loginFromRel" :rules="loginFromRules" label-width="0px" class="login_from">
         <!-- 用户名-->
-        <el-form-item>
+        <el-form-item prop="username">
           <el-input prefix-icon="iconfont icon-yonghu" v-model="loginfrom.username"></el-input>
         </el-form-item>
         <!--密码-->
-        <el-form-item>
+        <el-form-item prop="password">
           <el-input prefix-icon="iconfont icon-mima" type="password" v-model="loginfrom.password"></el-input>
         </el-form-item>
 
         <!--按钮-->
         <el-form-item class="btns">
-          <el-button type="primary">登录</el-button>
-          <el-button type="info">重置</el-button>
+          <el-button type="primary" @click="login">登录</el-button>
+          <el-button type="info" @click="resetLoginFrom">重置</el-button>
         </el-form-item>
 
       </el-form>
@@ -38,9 +38,31 @@
         },
         loginFromRules: {
           username: [
-            {required: true, message: ""}
+            {required: true, message: "请输入登录账号", triggerb: blur()},
+            {min: 3, max: 15, message: "请输入长度在3 — 15个左右的字母", triggerb: blur()}
+          ],
+          password: [
+            {required: true, message: "请输入登录密码", triggerb: blur()},
+            {min: 6, max: 15, message: "请输入长度在6 — 15个左右的字母", triggerb: blur()}
           ]
         }
+      }
+    }
+    ,
+    methods: {
+      //重置按钮事件
+      resetLoginFrom() {
+        //获取ref 应用并重置表单
+        this.$refs.loginFromRel.resetFields();
+      },
+      //校验
+      login() {
+        this.$refs.loginFromRel.validate(async valid => {
+          if (!valud) return;
+          const {data: result} = await this.$http.post('login', this.loginfrom)
+          if (result.meta.status != 200) return console.log("登录失败");
+          console.log("登录成功");
+        })
       }
     }
   }
