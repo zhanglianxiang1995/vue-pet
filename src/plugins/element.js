@@ -15,7 +15,11 @@ import {
   MenuItem,
   Breadcrumb,
   BreadcrumbItem,
-  Card
+  Card,
+  Row,
+  Col,
+  Table,
+  TableColumn
 } from 'element-ui'
 
 
@@ -31,7 +35,12 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItemGroup)
 Vue.use(Card)
-Vue.use(MenuItem), Vue.use(Breadcrumb), Vue.use(BreadcrumbItem)
+Vue.use(MenuItem),
+  Vue.use(Breadcrumb),
+  Vue.use(Row),
+  Vue.use(Col),
+Vue.use(Table),
+  Vue.use(TableColumn)
 
 
 //全局挂载
