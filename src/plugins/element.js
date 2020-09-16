@@ -35,13 +35,15 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItemGroup)
 Vue.use(Card)
-Vue.use(MenuItem),
-  Vue.use(Breadcrumb),
-  Vue.use(Row),
-  Vue.use(Col),
-Vue.use(Table),
-  Vue.use(TableColumn)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
 
 
+Vue.use(Card)
 //全局挂载
 Vue.prototype.$message = Message

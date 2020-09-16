@@ -19,6 +19,10 @@ body,
   font-size: 12px;
 }
 
+.el-table th.gutter {
+  display: table-cell !important;
+}
+
 .el-pagination {
   margin-top: 15px;
 }
