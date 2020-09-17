@@ -19,7 +19,8 @@ import {
   Row,
   Col,
   Table,
-  TableColumn
+  TableColumn,
+  MessageBox
 } from 'element-ui'
 
 
@@ -47,3 +48,4 @@ Vue.use(TableColumn)
 Vue.use(Card)
 //全局挂载
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
