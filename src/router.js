@@ -4,6 +4,15 @@ import Login from './components/Login.vue'
 import Home from './components/Home.vue'
 import Welcome from './components/Welcome.vue'
 import Users from './components/user/Users.vue'
+import Rights from './components/power/Rights.vue'
+import Roles from './components/power/Roles.vue'
+import Cates from './components/goods/Cate.vue'
+import Params from './components/goods/Params.vue'
+import Catelist from './components/goods/list.vue'
+import Add from './components/goods/Add.vue'
+import Order from './components/order/Order.vue'
+import Report from './components/report/Report.vue'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -14,10 +23,18 @@ const router = new Router({
     },
     {
       path: '/home', component: Home,
-      redirect:'/users',
+      redirect: '/welcome',
       children: [
-        //{path: '/welcome', component: Welcome},
-        {path:'/users',component:Users}
+        {path: '/welcome', component: Welcome},
+        {path: '/users', component: Users},
+        {path: '/rights', component: Rights},
+        {path: '/roles', component: Roles},
+        {path: '/categories', component: Cates},
+        {path: '/params', component: Params},
+        {path: '/goods', component: Catelist},
+        {path: '/goods/add', component: Add},
+        {path: '/orders', component: Order},
+        {path: '/reports', component: Report}
       ]
     },
   ]

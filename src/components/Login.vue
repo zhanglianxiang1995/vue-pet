@@ -57,9 +57,15 @@
       },
       //校验
       login() {
+debugger
         this.$refs.loginFromRel.validate(async valid => {
           if (!valid) return;
           const {data: res} = await this.$http.post('login', this.loginfrom);
+          if(typeof res.value!= "undefined"){
+                  console.log("qwe")
+                }else{
+              console.log("asd")
+                }
           if (res.meta.status !== 200) return this.$message.error('登录失败，请重新确认用户名和密码！');
           this.$message.success('登录成功');
           window.sessionStorage.setItem('token', res.data.token);
